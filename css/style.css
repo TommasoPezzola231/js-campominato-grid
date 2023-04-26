@@ -39,8 +39,15 @@ main {
     width: calc(100% / 10);
     height: calc(100% / 10);
     border: 2px solid black;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
+.clicked {
+    background-color: salmon;
+}
 
 
 /*******FOOTER********/
