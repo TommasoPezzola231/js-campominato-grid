@@ -15,11 +15,15 @@ let value = 100;
 play.addEventListener("click", function () {
     console.log("Play!");
     creaSquare(value)
+    let square = document.getElementsByClassName("square");
+    
+    for (let c = 0; c < value; c++) {
+        
+        square[c].addEventListener("click", function () {
+            this.classList.toggle("clicked")
+            console.log(`Hai selezionato il quadrato numero: ${square[c].innerHTML}`)
+        })
+        
+    }
 })
 
-let square = document.getElementsByClassName("square")
-
-square.addEventListener("click", function () {
-    this.classList.toggle("clicked")
-    console.log(square.innerTEXT)
-})
