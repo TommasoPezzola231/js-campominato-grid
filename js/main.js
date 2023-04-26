@@ -1,7 +1,6 @@
 function creaSquare(number) {
-    let square;
     for (let i = 1; i <= number; i++) {
-        square = `<div class="square">${i}</div>`;
+        let square = `<div class="square">${i}</div>`;
         box.innerHTML += square
         console.log("Box creato!")
     }
@@ -18,5 +17,9 @@ play.addEventListener("click", function () {
     creaSquare(value)
 })
 
-let square = document.getElementsByClassName("square");
+let square = document.getElementsByClassName("square")
 
+square.addEventListener("click", function () {
+    this.classList.toggle("clicked")
+    console.log(square.innerTEXT)
+})
