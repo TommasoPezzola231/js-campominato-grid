@@ -1,0 +1,17 @@
+function creaSquare(number) {
+    let square;
+    for (let i = 0; i < number; i++) {
+        square = `<div class="square">${i}</div>`;
+        box.innerHTML = square
+        console.log("Box creato!")
+    }
+    
+}
+
+const box = document.getElementById("box");
+const play = document.getElementById("start");
+let value = 100
+
+play.addEventListener("click", function creaSquare(value) {
+    console.log("Play!")
+})
